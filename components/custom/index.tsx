@@ -11,7 +11,7 @@ export const WeatherInput = ({ onPayload, isLoading }: any) => {
   const [country, setCountry] = React.useState("India");
 
   return (
-    <FormControl className="flex gap-3 flex-row items-center">
+    <FormControl className="flex gap-1 flex-row items-center">
       <Input variant="outline" size="sm" className="flex-1">
         <InputField
           placeholder="City"
@@ -35,9 +35,9 @@ export const WeatherInput = ({ onPayload, isLoading }: any) => {
             country,
           })
         }
-        className="flex-1 cursor-pointer"
+        className=" cursor-pointer"
       >
-        {isLoading ? <ButtonSpinner /> : <ButtonText>Report</ButtonText>}
+        {isLoading ? <ButtonSpinner /> : <ButtonText>Check</ButtonText>}
       </Button>
     </FormControl>
   );
